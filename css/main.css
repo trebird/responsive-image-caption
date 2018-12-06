@@ -10,7 +10,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
-  font: normal 100%/1.3 Georgia, serif
+  font: normal 100%/1.3 Georgia, serif;
 }
 
 *, *::before, *::after {
@@ -22,17 +22,83 @@ body {
 }
 
 figure {
-  margin: 0 auto;
+  margin: 0;
   background-color: #e2e2e2;
-  padding-bottom: 1rem;
+
 }
 
+.img-flex {
+  display: flex;
+}
+
+figcaption {
+  margin: auto;
+  padding: 1.3rem
+}
 
 h2 {
-  font-family: "Denk One";
-  margin-bottom: 1.3rem;
+  font-family: "Denk One", sans-serif;
+  margin: 0 0 1.3rem;
+}
+
+p {
+  margin-bottom: 0;
 }
 
 .img-flex {
   width: 100%;
+}
+
+@media only screen and (min-width: 38em) {
+
+  html {
+    font-size: 110%;
+    line-height: 1.4;
+  }
+
+  figure {
+    background-color: #fff;
+    position: relative;
+  }
+
+  figcaption {
+    position: absolute;
+    bottom: 1.4em;
+    right: 1.5em;
+    background-color: rgba(0, 0, 0, .3);
+    color: #fff;
+    border-radius: 10px;
+    width: 50.173%;
+    padding: 1.3rem;
+  }
+
+  p {
+    font-style: normal;
+  }
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  html {
+    font-size: 120%;
+    line-height: 1.5;
+  }
+
+  figcaption {
+    width: 35%;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  html {
+    font-size: 130%;
+  }
+
+  figcaption {
+    width: 25.05%;
+  }
+
 }
